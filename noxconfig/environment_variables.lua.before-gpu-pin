@@ -1,0 +1,26 @@
+-------------------------------
+---- ENVIRONMENT VARIABLES ----
+-------------------------------
+-- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
+
+hl.env("XCURSOR_SIZE", "24")
+hl.env("HYPRCURSOR_SIZE", "24")
+
+hl.env("HYPRCURSOR_THEME","Catppuccin Macchiato Green")
+-- for QT themed stuff like dolphin
+hl.env("QT_QPA_PLATFORMTHEME","qt6ct")
+
+-- nvidia environment variables
+hl.env("LIBVA_DRIVER_NAME","nvidia")
+hl.env("__GLX_VENDOR_LIBRARY_NAME","nvidia")
+hl.env("SDL_VIDEODRIVER","wayland")
+hl.env("GBM_BACKEND","nvidia-drm")
+
+hl.env("ELECTRON_OZONE_PLATFORM_HINT","auto")
+
+-- maybe fix shader cache issues?
+hl.env("__GL_SHADER_DISK_CACHE_SIZE","12000000000")
+
+-- maybe fix unreal engine issues?
+-- hl.env("AQ_DRM_DEVICES", "/dev/dri/by-path/pci-0000:2d:00.0-card:/dev/dri/by-path/pci-0000:24:00.0-card")
+-- hl.env("AQ_FORCE_LINEAR_BLIT", "0")

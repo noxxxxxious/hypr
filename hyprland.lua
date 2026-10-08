@@ -1,0 +1,8 @@
+require("noxconfig/monitors")
+require("noxconfig/environment_variables")
+require("noxconfig/input")
+require("noxconfig/autostart")
+require("noxconfig/keybindings")
+require("noxconfig/look_and_feel")
+require("noxconfig/misc")
+require("noxconfig/windows_and_workspaces")
